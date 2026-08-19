@@ -54,9 +54,10 @@ function App() {
         <div className=' flex justify-center mt-7 gap-5'>
             <button 
             onClick={() => handleStart()}
+            disabled={!stop}
             className='bg-blue-500 p-2 text-white px-4 disabled:bg-gray-400 disabled:cursor-not-allowed rounded-md'>Start</button>
             <button 
-            // disabled={stop}
+            disabled={stop}
             onClick={() => handleStop()}
             className='bg-blue-500 p-2 text-white px-4 disabled:bg-gray-400 disabled:cursor-not-allowed rounded-md'>Stop</button>
             <button
